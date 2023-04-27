@@ -6,7 +6,7 @@ function consumirAPI(){
     var apikey = "be73fca609554a6b86ea60694f0dbade";
     var ts = "1000";
     var hash = "18411005f1b18437240534a687b93894";
-    var url = 'http://gateway.marvel.com/v1/public/characters?ts=' + ts +"&apikey=" + apikey + "&hash=" + hash;
+    var url = 'https://gateway.marvel.com/v1/public/characters?ts=' + ts +"&apikey=" + apikey + "&hash=" + hash;
     var tablaMarvel = document.getElementById("tablaMarvel");
     fetch(url)
     .then(response => response.json())
